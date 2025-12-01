@@ -3,7 +3,8 @@ import { streamText, UIMessage, convertToModelMessages } from "ai";
 import { randomUUID } from "crypto";
 import { saveChat } from "@/lib/save-chat";
 
-export const maxDuration = 3000;
+// Vercel hobby plan allows up to 300 seconds
+export const maxDuration = 300;
 
 export async function POST(req: Request) {
   const { messages, id }: { messages: UIMessage[]; id?: string } =
