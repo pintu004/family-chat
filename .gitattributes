@@ -1,0 +1,2 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+C:/sanity/contact/ai-sdk-nextjs/ai-sdk-nextjs.zip filter=lfs diff=lfs merge=lfs -text
