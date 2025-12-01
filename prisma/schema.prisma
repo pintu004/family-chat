@@ -1,5 +1,7 @@
 generator client {
   provider = "prisma-client"
+  // Emit the client into the app bundle so Next can bundle it deterministically
+  output   = "../app/generated/prisma"
 }
 
 datasource db {
